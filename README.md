@@ -11,7 +11,7 @@ Make sure you have Node.js and npm installed on your machine.
 ### Installation
 
 1. **Clone the Repository:**
-   ```bash 
+```bash 
    git clone https://github.com/your-username/todo-app.git
 ```
 
@@ -27,16 +27,14 @@ Make sure you have Node.js and npm installed on your machine.
 ```
     
 4. **Start the Application on Port 3000:**
-    ```bash
+```bash
    npm start
 ```
     
 5. **Additional Scripts:**
-
 ```bash
   npm test    # Run tests (uses the test database) 
   npm run dev # Run a dev server (uses the development database)`
-    
 ```
     
 
@@ -76,7 +74,7 @@ To set up the database for the Todo App, follow these steps:
     - Open the `config/config.json` file in your Todo App project.
     - Update the development configuration with your PostgreSQL credentials:
         
-    ``` json
+``` json
         
 `{   "development": {     "username": "your_postgresql_username",     "password": "your_postgresql_password",     "database": "your_database_name",     "host": "127.0.0.1",     "dialect": "postgres"   } }`
 
@@ -86,10 +84,8 @@ Update the production and testing database details similarly.
     
     - Open a terminal in your project directory.
     - Run the following command to apply the database migrations:
-        ```bash
-        
-        npx sequelize-cli db:migrate
-        
+```bash
+    npx sequelize-cli db:migrate
 ```
         
 4. **Start the Application:**
