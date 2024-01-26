@@ -69,20 +69,24 @@ To set up the database for the Todo App, follow these steps:
 1. **Install PostgreSQL:**
     
     - Download and install PostgreSQL from the official website.
+
 2. **Configure Database Connection:**
-    
-    - Open the `config/config.json` file in your Todo App project.
-    - Update the development configuration with your PostgreSQL credentials:
-        
-``` json
-      {   "development":
-         {     "username":"your_postgresql_username",       "password": "your_postgresql_password",     "database": "your_database_name",     
-         "host": "127.0.0.1",     
-         "dialect": "postgres"   }
-      }
-``` 
+- Open the config/config.json file in your Todo App project.
+- Update the development configuration with your PostgreSQL credentials:
+
+```
+{
+  "development": {
+    "username": "your_postgresql_username",
+    "password": "your_postgresql_password",
+    "database": "your_database_name",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
 Update the production and testing database details similarly.
-  
+```
+
 3. **Run Migrations:**
     
     - Open a terminal in your project directory.
